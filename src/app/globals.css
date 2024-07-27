@@ -16,18 +16,62 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.navbar-logo{
+  font-family: "Candal", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.hero-text{
+  font-family: "Candal", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.hero-subtext{
+  font-family:sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.hero-punchline{
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.vl {
+  border-left: 1px solid gray;
+  min-height: fit-content;
+  max-height: 4rem;
+  height: 4rem;
+}
+
+
+.nav-li {
+  position: relative;
+  padding-bottom: 5px; 
+  transition: all 0.3s ease;
+}
+
+.nav-li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; 
+  background-color: black; 
+  transition: width 0.3s ease; 
+}
+
+.nav-li:hover::after {
+  width: 100%;
 }
