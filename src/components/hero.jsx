@@ -3,10 +3,7 @@ export default function Hero() {
     <section className="bg-[#F0F0F0]  ">
       <div className="flex justify-around gap-4 items-center">
         <div className="left w-1/3 space-y-10">
-          <style>
-            @import
-            url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
-          </style>
+         
           <h1 className="hero-text">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
           <p className="hero-subtext">
             Browse through our diverse range of meticulously crafted garments,
@@ -23,12 +20,12 @@ export default function Hero() {
               <h1 className="hero-punchline">200+</h1>
               <h2>International Brands</h2>
             </div>
-            <div class="vl"></div>
+            <div className="vl"></div>
             <div>
               <h1 className="hero-punchline">2,000+</h1>
               <h2>High-Quality Products</h2>
             </div>
-            <div class="vl"></div>
+            <div className="vl"></div>
             <div>
               <h1 className="hero-punchline">30,000+</h1>
               <h2>Happy Customers</h2>
